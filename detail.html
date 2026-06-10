@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情 - 数码先锋</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detail-wrapper {
+            display: flex;
+            gap: 40px;
+        }
+        .detail-img-box {
+            flex: 1;
+            height: 400px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #999;
+        }
+        .detail-info-box {
+            flex: 1;
+        }
+        .price-tag {
+            font-size: 32px;
+            color: #ff9900;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .specs {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .specs div { margin-bottom: 10px; }
+        .action-btns button {
+            padding: 15px 30px;
+            font-size: 16px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-buy { background: #ff9900; color: white; }
+        .btn-cart { background: #007bff; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">数码先锋</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="list.html">产品列表</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="user.html">用户中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="detail-wrapper">
+            <!-- 左侧大图 -->
+            <div class="detail-img-box">
+            <img src="img/1.jpg"  width="100%">
+            </div>
+
+            <!-- 右侧信息 -->
+            <div class="detail-info-box">
+                <h1>高性能游戏笔记本电脑 X9000</h1>
+                <div class="price-tag">¥ 8999.00</div>
+                <div class="specs">
+                    <div><strong>CPU：</strong> Intel Core i9-13900H</div>
+                    <div><strong>显卡：</strong> NVIDIA RTX 4060 8G</div>
+                    <div><strong>内存：</strong> 32GB DDR5</div>
+                    <div><strong>屏幕：</strong> 16英寸 2.5K 240Hz</div>
+                </div>
+                <div class="action-btns">
+                    <button class="btn-buy" onclick="alert('已跳转到支付页面')">立即购买</button>
+                    <button class="btn-cart" onclick="alert('已加入购物车')">加入购物车</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <h3>商品详情介绍</h3>
+            <p>这里是长图文详情区域。这款笔记本采用了最新的散热架构，性能释放强劲，适合大型3A游戏及专业视频剪辑工作。</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 数码先锋商城 版权所有
+    </footer>
+</body>
+</html>
